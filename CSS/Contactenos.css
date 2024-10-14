@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    overflow-x: hidden; /* Evita desplazamientos horizontales */
+}
+
+/* Encabezado */
+header {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #444;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transition: color 0.3s ease; /* Añadir transición */
+}
+
+/* Sección de contenido */
+section {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Estilos para el formulario */
+fieldset {
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Añadir transición */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: #2e2e2e;
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #444;
+}
+
+input[type="text"]:disabled,
+input[type="email"]:disabled,
+input[type="date"]:disabled {
+    background-color: #ddd;
+    color: #777;
+}
+
+/* Pie de página */ 
+footer {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 10px;
+        max-width: 100%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos adicionales para cumplir con otros requisitos */
+/* Estilos de enlaces */
+a:link {
+    color: white;
+}
+a:visited {
+    color: lightgray;
+}
+a:active {
+    color: red;
+}
+
+/* Primer párrafo con formato especial */
+section p:first-letter {
+    font-size: 2em;
+    color: red;
+}
+
+/* Fondo con gradiente */
+body {
+    background: linear-gradient(45deg, #ff6b6b, #f0e130, #1e90ff);
+}

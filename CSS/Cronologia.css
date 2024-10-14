@@ -1,0 +1,173 @@
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Grid layout para evitar desplazamientos horizontales */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        header, nav, section, footer {
+            grid-column: 1 / -1;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #2e2e2e;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #444;
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Animación en el hover de los enlaces */
+        nav a {
+            animation: hoverFade 1s infinite;
+        }
+
+        @keyframes hoverFade {
+            0% { color: #fff; }
+            100% { color: #ffcc00; }
+        }
+
+        /* Sección de contenido */
+        section {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        /* Primera letra estilizada */
+        section p::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        /* Imágenes */
+        section img {
+            max-width: 60%; 
+            height: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section img:hover {
+            transform: scale(1.05); /* Animación de imagen al hacer hover */
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #2e2e2e;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Estilo para los vínculos fuera del menú */
+        a {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        /* Formato para formularios */
+        input:focus {
+            border-color: #ffcc00;
+        }
+
+        input:disabled {
+            background-color: #ccc;
+        }
+
+        /* Gradiente en una caja */
+        .gradient-box {
+            background: linear-gradient(to right, red, yellow, green);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            margin: 20px 0;
+        }
+
+        /* Media Queries para diseño responsivo */
+        @media screen and (max-width: 768px) {
+            section img {
+                max-width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            section img {
+                max-width: 100%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }

@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #444;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Sección de contenido */
+section {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px; /* Ancho máximo de la sección */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Imagen */
+section img {
+    max-width: 100%;  /* Imagen se adapta al ancho de la sección */
+    height: auto;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
